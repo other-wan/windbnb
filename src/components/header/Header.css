@@ -1,0 +1,32 @@
+header {
+    height: 148px;
+    padding-block: 20px;
+}
+
+.logo-container {
+    margin-block: 0 40px;
+}
+
+.toggle-btn-container {
+    width: max-content;
+    border: 1px solid gray;
+    display: flex;
+    align-items: center;
+    border-radius: 16px;
+    margin-inline: auto;
+}
+
+.toggle-btn-container>button {
+    padding: 16px 16px;
+    border-right: 1px solid gray;
+}
+
+.toggle-btn-container>button:last-child {
+    border-color: transparent;
+}
+
+.toggle-btn-container>button>img {
+    height: 18px;
+    width: 18px;
+    box-sizing: content-box;
+}

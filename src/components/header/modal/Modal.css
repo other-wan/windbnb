@@ -1,0 +1,113 @@
+.modal-container {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    min-height: 80vh;
+    padding-block: 20px;
+    background: white;
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-block: 0 16px;
+}
+
+.input-container {
+    position: relative;
+}
+
+.modal-form input {
+    padding: 30px 26px 12px 26px;
+    width: 100%;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.1);
+    caret-color: transparent;
+}
+
+.modal-form input:focus {
+    outline: none;
+}
+
+#location-input {
+    border-top-right-radius: 16px;
+    border-top-left-radius: 16px;
+}
+
+#guest-input {
+    border-bottom-right-radius: 16px;
+    border-bottom-left-radius: 16px;
+}
+
+.modal-form label {
+    position: absolute;
+    top: 11px;
+    left: 26px;
+}
+
+.location {
+    position: relative;
+}
+
+.location-select {
+    width: 100%;
+    position: absolute;
+    top: 130px;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    visibility: hidden;
+    opacity: 0;
+    z-index: -1;
+}
+
+.location-select li {
+    background: url("../../../assets/icon-location.svg") no-repeat 25px center;
+    background-size: 14px;
+    padding: 12px 50px;
+}
+
+.guest-select {
+    padding: 26px;
+    visibility: hidden;
+}
+
+.location-select.active,
+.guest-select.active {
+    visibility: visible;
+    opacity: 1;
+    z-index: 1;
+}
+
+.btn-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 16px;
+    margin-block: 12px 0;
+}
+
+.btn-container button {
+    width: 23px;
+    height: 23px;
+    border: 1px solid gray;
+    border-radius: 4px;
+}
+
+.adult-select {
+    margin-block: 0 56px;
+}
+
+.btn-submit-container {
+    position: absolute;
+    bottom: 24px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.btn-submit {
+    margin-inline: auto;
+}

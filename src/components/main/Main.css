@@ -1,0 +1,10 @@
+.intro {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-block: 16px 8px;
+}
+
+.stays{
+    margin-block: 8px 32px;
+}
